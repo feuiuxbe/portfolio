@@ -1,0 +1,12 @@
+.places__link-container {
+  grid-area: link-container;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .places__link-container {
+    padding: 0 16px;
+  }
+}

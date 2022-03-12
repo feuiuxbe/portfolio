@@ -1,0 +1,11 @@
+.places__text-container {
+  grid-area: text-container;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .places__text-container {
+    padding: 0 16px;
+  }
+}

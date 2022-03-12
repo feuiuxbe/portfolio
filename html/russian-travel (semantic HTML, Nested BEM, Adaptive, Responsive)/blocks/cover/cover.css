@@ -1,0 +1,23 @@
+.cover {
+  padding: 92px 48px 0 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+  .cover {
+    padding: 92px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover {
+    padding: 90px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover {
+    padding: 66px 0 0 0;
+  }
+}

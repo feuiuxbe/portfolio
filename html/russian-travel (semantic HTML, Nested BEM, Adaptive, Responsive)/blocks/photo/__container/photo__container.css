@@ -1,0 +1,17 @@
+.photo__container {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  gap: 16px;
+  object-fit: cover;
+  font-size: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .photo__container {
+    gap: 12px;
+  }
+}
