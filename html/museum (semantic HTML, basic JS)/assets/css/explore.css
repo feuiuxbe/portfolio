@@ -1,0 +1,222 @@
+.explore {
+    display: flex;
+ }
+
+ .explore-description {
+    margin-right: 60px;
+    max-width: 660px;
+ }
+
+ .explore-description p {
+    min-height: 77px;
+    font-weight: 300;
+    line-height: 38px;
+ }
+
+ .explore-description p:not(:last-of-type) {
+    margin-bottom: 25px;
+ }
+
+ .explore-description span {
+    color: var(--font-gold);
+ }
+
+ .explore__img {
+    display: block;
+    width: 720px;
+    height: 700px;
+ }
+
+ .explore__range-block {
+    box-sizing: border-box;
+    margin-top: 15px;
+ }
+
+ .explore__range-block-wrapper {
+    position: relative;
+ }
+
+ .explore__resize {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 440px;
+    height: 700px;
+    overflow: hidden;
+ }
+
+ .tr {
+    transform: 0.3s;
+ }
+
+ .explore__btn {
+    position: absolute;
+    border: none;
+    background: transparent;
+    bottom: 0;
+    left: 421px;
+ }
+
+ .explore__btn img {
+    display: block;
+ }
+
+ @media screen and (max-width: 1150px) {
+    .explore {
+       display: block;
+    }
+
+    .explore__range-block-wrapper {
+       max-width: 720px;
+       width: 100%;
+       margin: 0 auto;
+    }
+
+    .explore-description {
+       margin-right: 0;
+       max-width: 100%;
+    }
+ }
+
+
+ @media screen and (max-width: 1024px) {
+    .explore h2 {
+       font-size: 50px;
+       line-height: 75px;
+       padding-bottom: 20px;
+    }
+
+    .explore-description br {
+       display: none;
+    }
+
+    .explore-description p {
+       min-height: auto;
+       font-weight: 300;
+       line-height: 35px;
+    }
+
+    .explore-description p:last-of-type {
+       display: none;
+    }
+
+    .explore-description p:not(:last-of-type) {
+       margin-bottom: 2px;
+    }
+
+    .explore__range-block {
+
+       margin-top: 62px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    #explore {
+       padding-bottom: 40px;
+    }
+
+    .explore h2 {
+       font-size: 40px;
+       line-height: 60px;
+    }
+
+    .explore-description p {
+       display: none;
+    }
+
+    .explore__range-block {
+       margin-top: 0;
+    }
+
+    .explore__range-block-wrapper {
+       max-width: 728px;
+       height: 705px;
+       height: auto;
+       margin: 0;
+    }
+
+    .explore__img {
+       max-width: 728px;
+       width: 100%;
+       height: 705px;
+       object-fit: contain;
+    }
+
+    .explore__resize {
+       max-width: 728px;
+       width: 441px;
+       height: 100%;
+       object-fit: contain;
+    }
+
+    .explore__resize img {
+       max-width: 728px;
+       height: 705px;
+       object-fit: contain;
+    }
+
+    .explore__btn img {
+       height: 705px;
+       object-fit: contain;
+    }
+ }
+
+ @media screen and (max-width: 764px) {
+    .explore__img {
+       max-width: 728px;
+       width: 100%;
+       height: auto;
+       object-fit: contain;
+    }
+
+    .explore__resize {
+       width: 60%;
+    }
+
+    .explore__resize img {
+       max-width: 728px;
+       max-height: 705px;
+       height: 100%;
+       object-fit: contain;
+    }
+
+    .explore__btn {
+       max-height: 705px;
+       height: 100%;
+       left: 58%;
+    }
+
+    .explore__btn img {
+       max-height: 705px;
+       height: 100%;
+    }
+ }
+
+ @media screen and (max-width: 440px) {
+    .explore h2 {
+       font-size: 28px;
+       line-height: 40px;
+    }
+
+    .explore__img {
+       max-width: 380px;
+    }
+
+    .explore__resize {
+       width: 230px;
+       max-height: 368px;
+       height: 100%;
+    }
+
+    .explore__resize img {
+       max-height: 368px;
+    }
+
+    .explore__btn {
+       left: 220px;
+    }
+
+    .explore__btn img {
+       max-height: 368px;
+    }
+ }

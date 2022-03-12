@@ -1,0 +1,204 @@
+.visiting-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 77px 10px;
+ }
+
+ article {
+    width: 440px;
+    color: var(--font-dark);
+ }
+
+ article img {
+    display: block;
+    max-width: 440px;
+    width: 100%;
+    min-height: auto;
+    background-color: var(--font-gold);
+ }
+
+ article h3 {
+    position: relative;
+    padding: 25px 0 21px;
+    font-family: Forum, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--font-dark);
+    transition: color 0.3s ease;
+ }
+
+ h3::after {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 300px;
+    height: 2px;
+    background-color: var(--dark-red);
+    border: none;
+    transition: width 0.8s ease;
+ }
+
+ article a:hover h3 {
+    color: var(--font-gold);
+    transition: color 0.3s ease;
+ }
+
+ article a:hover h3::after {
+    width: 100%;
+    transition: width 0.8s ease;
+ }
+
+ p.visiting-text:first-of-type {
+    padding-bottom: 10px;
+    line-height: 26px;
+ }
+
+ .visiting-text:last-of-type {
+    font-size: 18px;
+    line-height: 21px;
+ }
+
+ @media screen and (max-width: 1380px) {
+    .visiting-container {
+       justify-content: space-evenly;
+       gap: 60px 10px;
+    }
+ }
+
+ @media screen and (max-width: 1024px) {
+    .visiting-container {
+       justify-content: space-evenly;
+       gap: 60px 0;
+    }
+
+    article {
+       width: 330px;
+    }
+
+    article h3 {
+       padding: 25px 0 24px;
+       font-size: 28px;
+       line-height: 31px;
+       letter-spacing: 3px;
+    }
+
+    h3::after {
+       bottom: 12px;
+       width: 150px;
+    }
+
+    p.visiting-text:first-of-type {
+       font-size: 20px;
+       line-height: 23px;
+    }
+
+    .visiting-text:last-of-type {
+       font-weight: 200;
+       font-size: 16px;
+       line-height: 19px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .visiting .section-title {
+       font-size: 40px;
+       line-height: 60px;
+    }
+
+    article {
+       width: 280px;
+    }
+
+    article img {
+       max-width: 280px;
+       height: auto;
+    }
+
+    .visiting-container {
+       justify-content: space-between;
+       gap: 40px 46px;
+       margin: 0 56px;
+    }
+
+    article h3 {
+       padding: 25px 0 21px;
+       font-size: 22px;
+       line-height: 24px;
+    }
+
+    p.visiting-text:first-of-type {
+       font-size: 18px;
+       line-height: 21px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .visiting-container {
+       display: block;
+    }
+
+    article {
+       margin: 0 auto;
+    }
+ }
+
+ @media screen and (max-width: 420px) {
+    #visiting {
+       padding-bottom: 45px;
+    }
+
+    .visiting .section-title {
+       font-size: 28px;
+       line-height: 40px;
+    }
+
+    article {
+       width: 100%;
+       margin-left: -5px;
+    }
+
+    article:not(:last-of-type) {
+       padding-bottom: 40px;
+    }
+
+    article img {
+       max-height: 180px;
+       height: 100%;
+       width: auto;
+       object-fit: cover;
+    }
+
+    article h3 {
+       font-size: 18px;
+       line-height: 20px;
+       letter-spacing: 5px;
+    }
+
+    h3::after {
+       bottom: 10px;
+       width: 150px;
+    }
+
+    p.visiting-text:first-of-type,
+    p.visiting-text {
+       font-size: 16px;
+       line-height: 19px;
+    }
+ }
+
+ @media screen and (max-width: 410px) {
+    article img {
+       max-height: auto;
+       width: 100%;
+       object-fit: cover;
+    }
+
+    article {
+       margin-left: 0;
+    }
+ }

@@ -1,0 +1,229 @@
+footer.dark-section {
+    padding: 84px 0 50px;
+ }
+
+ .footer {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .footer__link-block {
+    max-width: 703px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+ }
+
+ .footer__nav ul {
+    margin-top: 5px;
+    width: 363px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 145px;
+ }
+
+ footer .nav-item {
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+ }
+
+ footer .nav-item:nth-of-type(5) {
+    margin-bottom: 0px;
+ }
+
+ footer .nav-item:nth-of-type(6) {
+    margin-bottom: 0px;
+ }
+
+ .footer__social-list {
+    width: 340px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .social-list__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 0px #666666);
+    border-radius: 50px;
+ }
+
+ .social-list__item a path {
+    transition: all 0.8s ease;
+ }
+
+ .social-list__item a:hover path {
+    fill: var(--font-gold);
+    transition: all 0.8s ease;
+ }
+
+ .social-list__item:not(:last-of-type) {
+    padding-right: 8px;
+ }
+
+ footer hr {
+    margin: 50px 0;
+    background-color: #666666;
+ }
+
+ .last-string {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .last-string p {
+    letter-spacing: 2px;
+ }
+
+ .last-string a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+ }
+
+ .last-string a:first-of-type {
+    margin-left: 122px;
+ }
+
+ @media screen and (max-width: 1024px) {
+    footer.dark-section {
+       padding-top: 60px;
+    }
+
+    .footer__nav ul {
+       font-size: 22px;
+       line-height: 26px;
+       max-width: 313px;
+       width: 100%;
+       column-gap: 110px;
+    }
+
+    .footer__nav .nav-item {
+       padding-right: 13px;
+    }
+
+    .footer__social-list {
+       padding-bottom: 0px;
+       margin-left: 92px;
+    }
+
+ }
+
+ @media screen and (max-width: 1010px) {
+    .footer {
+       flex-direction: column;
+    }
+
+    .footer__nav .header__nav-list {
+       max-width: 393px;
+       margin-bottom: 50px;
+       margin-top: 12px;
+       margin-right: 94px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    footer.dark-section {
+       padding-top: 48px;
+       padding-bottom: 40px;
+    }
+
+    footer .nav-item {
+       font-size: 18px;
+       line-height: 21px;
+    }
+
+    footer hr {
+       margin: 40px 0;
+    }
+
+    .last-string p,
+    .last-string a {
+       font-size: 22px;
+    }
+
+    .footer__social-list {
+       margin-right: 90px;
+    }
+ }
+
+ @media screen and (max-width: 760px) {
+    .footer__link-block {
+       display: block;
+    }
+
+    .footer__nav .header__nav-list {
+       max-width: 100%;
+       margin-top: 40px;
+       margin-bottom: 0;
+       max-height: 68px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       justify-items: flex-start;
+    }
+
+    .header__nav-list .nav-item {
+       min-width: 77px;
+       max-width: 77px;
+       line-height: 19px;
+       height: 19px;
+       padding-right: 0;
+       margin-bottom: 40px;
+       padding-right: 0;
+       font-size: 16px;
+       line-height: 19px;
+    }
+
+
+    .footer__social-list {
+       margin: 40px auto 0;
+    }
+
+    .last-string p,
+    .last-string a {
+       font-size: 16px;
+       line-height: 22px;
+    }
+
+    .last-string a:first-of-type {
+       display: none;
+    }
+ }
+
+
+ @media screen and (max-width: 420px) {
+    footer.dark-section {
+       padding-top: 40px;
+    }
+
+    .header__nav-list .nav-item {
+       margin-bottom: 30px;
+    }
+
+    .footer__social-list {
+       max-width: 260px;
+    }
+
+    .footer__social-list .social-list__item {
+       padding-right: 5px;
+    }
+ }

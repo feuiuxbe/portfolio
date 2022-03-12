@@ -1,0 +1,479 @@
+:root {
+    --bg-dark: #030303;
+    --bg-bright: #ffffff;
+    --font-bright: #FFFFFF;
+    --dark-red: #710707;
+    --font-gold: #9d8665;
+    --font-dark: #000000;
+    --dotes: #999999;
+    --dotes-active: #333333;
+ }
+
+ .video__img-block {
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 650px;
+ }
+
+ .video__img-block.full {
+    height: calc(100vh - 150px);
+ }
+
+ video.full {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ }
+
+ video {
+    max-width: 1440px;
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+ }
+
+ .video__img-block button {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: calc(50% - 110px);
+    top: calc(50% - 110px);
+    background-color: transparent;
+    border: 8px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.8s ease;
+ }
+
+ #stop {
+    display: none;
+ }
+
+ .video__img-block button path,
+ .video__btn-block button path {
+    transition: fill 0.8s ease;
+ }
+
+ .video__img-block button:hover path,
+ .video__btn-block button:hover path {
+    fill: var(--font-gold);
+    transition: fill 0.8s ease;
+ }
+
+ .video__img-block button:hover {
+    border-color: var(--font-gold);
+    transition: border-color 0.8s ease;
+ }
+
+ .video__img-block button svg {
+    margin-left: 20px;
+ }
+
+ .video h2 {
+    padding-bottom: 0;
+ }
+
+ .video__btn-block {
+    min-height: 85px;
+    padding: 0 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-dark);
+ }
+
+ .video__btn-block button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+ }
+
+ .video__progress {
+    background: linear-gradient(to right, var(--dark-red) 0%, var(--dark-red) 40%, #C4C4C4 40%, #C4C4C4 100%);
+    height: 8px;
+    outline: none;
+    -webkit-appearance: none;
+ }
+
+ .video__progress::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background-color: #FFFFFF;
+ }
+
+ .btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .btn-wrapper:last-of-type {
+    flex-basis: 296px;
+ }
+
+ .play {
+    margin: 0 50px;
+    flex-grow: 1;
+ }
+
+ .sound {
+    width: 155px;
+    margin: 0 50px;
+ }
+
+ #sound-none {
+    display: none;
+ }
+
+ .fullscreen-hidden {
+    display: none;
+ }
+
+ .video__text-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 75px;
+ }
+
+ .video__text-block p {
+    max-width: 720px;
+    font-weight: 300;
+    line-height: 38px;
+ }
+
+ .slide__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+    gap: 0 42px;
+ }
+
+ .slide__item {
+    max-width: 452px;
+    width: 100%;
+ }
+
+ .slide__item iframe {
+    box-sizing: border-box;
+    display: block;
+    max-width: 452px;
+    width: 100%;
+    height: 256px;
+ }
+
+ .slide__btn {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+ }
+
+ .slide__btn button {
+    height: 12px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    display: flex;
+ }
+
+ button.dote {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--dotes);
+ }
+
+ button.dote.active {
+    background-color: var(--dotes-active);
+ }
+
+
+ @media screen and (max-width: 1024px) {
+    .video__text-block {
+       display: block;
+       padding-bottom: 40px;
+    }
+
+    .video__text-block p {
+       display: none;
+    }
+
+    .video__img-block {
+       height: 444px;
+       margin-bottom: -1px;
+    }
+
+    video {
+       height: 444px;
+    }
+
+    .video__img-block button {
+       width: 152px;
+       height: 152px;
+       left: calc(50% - 76px);
+       top: calc(50% - 76px);
+    }
+
+    .video__img-block button svg {
+       width: 63.17px;
+       height: 83px;
+    }
+
+    .video__btn-block {
+       min-height: 60px;
+       padding: 0 40px;
+    }
+
+    .slide__block {
+       margin-bottom: 40px;
+    }
+
+    .slide__item iframe {
+       height: 170px;
+    }
+
+    .video__progress {
+       height: 5px;
+    }
+
+    .play2 {
+       margin-top: 3px;
+    }
+
+    .play,
+    .sound {
+       margin: 0 30px;
+    }
+
+    .sound {
+       max-width: 143px;
+       width: 100%;
+    }
+
+    .video__progress::-webkit-slider-thumb {
+       width: 13px;
+       height: 13px;
+    }
+
+    .sound-none,
+    .sound-yes {
+       margin-top: 3px;
+       width: 26px;
+       height: 20px;
+    }
+
+    .fullscreen-open,
+    .fullscreen-close {
+       width: 26px;
+       height: 26px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .video .section-title {
+       font-size: 40px;
+       line-height: 60px;
+    }
+
+    .video__text-block {
+       padding-bottom: 20px;
+    }
+
+    .video__img-block {
+       height: 329px;
+    }
+
+    video {
+       height: 329px;
+    }
+
+    .video__btn-block {
+       position: relative;
+       min-height: 56px;
+       padding: 0 30px;
+       margin-bottom: 21px;
+    }
+
+    .play {
+       position: absolute;
+       top: 0;
+       left: 0;
+       margin: 0;
+       width: 100%;
+    }
+
+    .video__progress {
+       height: 5px;
+    }
+
+    .sound {
+       max-width: 100%;
+       width: 100%;
+    }
+
+    .play2 {
+       width: 23px;
+       height: 29px;
+       margin-right: 30px;
+    }
+
+    .stop {
+       height: 29px;
+       width: 23px;
+       margin-right: 30px;
+    }
+
+    .sound-none,
+    .sound-yes {
+       width: 27px;
+       height: 21px;
+    }
+
+    .fullscreen-open,
+    .fullscreen-close {
+       width: 27px;
+       height: 27px;
+    }
+
+    .video__img-block button {
+       width: 80px;
+       height: 80px;
+       left: calc(50% - 40px);
+       top: calc(50% - 40px);
+       border: 3px solid #FFFFFF;
+    }
+
+    .video__img-block button svg {
+       width: 33px;
+       height: 43px;
+       margin-left: 5px;
+    }
+
+    .slide__block {
+       height: 199px;
+       margin-bottom: 21px;
+       gap: 0 20px;
+       overflow-x: hidden;
+    }
+
+    .slide__item {
+       width: 364px;
+    }
+
+    .slide__item:last-of-type {
+       display: none;
+    }
+
+    .slide__item iframe {
+       max-width: 354px;
+       width: 100%;
+       height: 199px;
+    }
+
+    .slide__btn {
+       max-width: 190px;
+    }
+ }
+
+ @media screen and (max-width: 420px) {
+    #video {
+       padding: 36px 0 40px;
+    }
+
+    .video .section-title {
+       font-size: 28px;
+       line-height: 40px;
+    }
+
+    .video__img-block {
+       height: 172px;
+    }
+
+    video {
+       height: 172px;
+    }
+
+    .video__btn-block {
+       min-height: 54px;
+       margin-bottom: 40px;
+       padding: 0 20px;
+    }
+
+    .video__img-block button {
+       width: 50px;
+       height: 50px;
+       left: calc(50% - 25px);
+       top: calc(50% - 25px);
+    }
+
+    .video__img-block button svg {
+       width: 21px;
+       height: 27px;
+    }
+
+    .slide__block {
+       height: 101px;
+       margin-bottom: 40px;
+    }
+
+    .slide__item iframe {
+       height: 101px;
+    }
+
+    .slide__btn {
+       max-width: 174px;
+       height: 8px;
+    }
+
+    button.dote {
+       width: 8px;
+       height: 8px;
+    }
+
+    .slide__btn button svg {
+       height: 8px;
+       width: 7px;
+    }
+
+    .video__progress {
+       height: 4px;
+    }
+
+    .play2 {
+       width: 13.5px;
+       height: 17.5px;
+       margin-right: 30px;
+    }
+
+    .stop {
+       height: 13.5px;
+       width: 13.5px;
+       margin-right: 30px;
+    }
+
+    .video__progress::-webkit-slider-thumb {
+       width: 10px;
+       height: 10px;
+    }
+
+    .sound-none,
+    .sound-yes {
+       margin-top: 3px;
+       width: 18px;
+       height: 14px;
+    }
+
+    .fullscreen-open,
+    .fullscreen-close {
+       width: 18px;
+       height: 18px;
+    }
+ }

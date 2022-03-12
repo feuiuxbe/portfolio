@@ -1,0 +1,122 @@
+.picture-container {
+    height: 1960px;
+    overflow-y: hidden;
+ }
+
+ .picture-inner-container {
+    display: flex;
+    gap: 0 36px;
+    overflow-x: hidden;
+ }
+
+ .column1,
+ .column3 {
+    padding-top: 50px;
+ }
+
+ .column1,
+ .column3,
+ .column2 {
+    overflow-y: hidden;
+ }
+
+ .picture-inner-container img {
+    max-width: 456px;
+    margin-bottom: 24px;
+    display: block;
+    width: 100%;
+ }
+
+ #gallery {
+    padding-bottom: 0px;
+    position: relative;
+ }
+
+ .shadow {
+    position: absolute;
+    height: 300px;
+    max-width: 1440px;
+    width: 100%;
+    bottom: 0;
+    background: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 8%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(bottom, rgb(0, 0, 0) 0%, rgba(125, 185, 232, 0) 100%);
+ }
+
+ #gallery h2 {
+    padding-bottom: 75px;
+ }
+
+ @media screen and (max-width: 1440px) {
+    #gallery {
+       width: 100%;
+       overflow-x: hidden;
+    }
+ }
+
+ @media screen and (max-width: 1024px) {
+    #gallery h2 {
+       font-size: 50px;
+       line-height: 75px;
+       padding-bottom: 60px;
+    }
+
+    .picture-container {
+       height: 1265px;
+    }
+
+    .picture-inner-container {
+       max-height: 1800px;
+    }
+
+    .picture-inner-container img {
+       max-width: 304px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    #gallery {
+       padding-top: 40px;
+    }
+
+    #gallery h2 {
+       font-size: 40px;
+       line-height: 60px;
+       padding-bottom: 40px;
+    }
+
+    .picture-container {
+       height: 1080px;
+    }
+
+    .picture-inner-container {
+       gap: 0 24px;
+       justify-content: space-between;
+    }
+
+    .column3 {
+       display: none;
+    }
+
+    .picture-inner-container img {
+       max-width: 352px;
+       margin-bottom: 24px;
+       display: block;
+       width: 100%;
+    }
+
+    .picture-container {
+       height: 1080px;
+    }
+
+ }
+
+ @media screen and (max-width: 420px) {
+    #gallery h2 {
+       font-size: 28px;
+       line-height: 40px;
+    }
+
+    .picture-container {
+       height: 637px;
+    }
+ }

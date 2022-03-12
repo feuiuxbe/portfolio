@@ -1,0 +1,184 @@
+.welcome {
+    padding: 0;
+ }
+
+ .welcome .container {
+    position: relative;
+ }
+
+ .welcome-background {
+    /* max-width: 1920px; */
+    padding: 150px 0 272px;
+    margin: 0 auto;
+    background: url(../img/background.jpg) no-repeat;
+    background-size: auto auto;
+    background-position: top right;
+ }
+
+ .section-title {
+    padding-bottom: 25px;
+    font-family: Forum, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+ }
+
+ .bright {
+    color: var(--font-bright);
+ }
+
+ .section-subtitle {
+    padding-bottom: 76px;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+ }
+
+ .discover-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    min-height: 75px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--font-bright);
+    border-radius: 10px;
+    background-color: var(--dark-red);
+    transition: background-color 0.8s ease;
+ }
+
+ .discover-button:hover {
+    background-color: var(--font-gold);
+    transition: background-color 0.8s ease;
+ }
+
+ .welcome-slider {
+    width: 600px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-dark);
+    padding: 40px 75px 40px 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .welcome-slider__numbers {
+    display: flex;
+    width: 76px;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+ }
+
+ .welcome-slider__icons {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+ }
+
+ .welcome-slider__icons button {
+    background-color: var(--bg-bright);
+    width: 16px;
+    height: 16px;
+    border: none;
+ }
+
+ .welcome-slider__icons button:hover,
+ .welcome-slider__icons button.active {
+    background-color: var(--font-gold);
+ }
+
+ .welcome-slider__arrow {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .welcome-slider__arrow button {
+    border: none;
+    background-color: transparent;
+ }
+
+ @media screen and (max-width: 1024px) {
+    .welcome-background {
+       padding: 50px 0 192px;
+       background-size: 700px 525px;
+    }
+
+    .section-title {
+       font-size: 50px;
+    }
+
+    .section-subtitle {
+       padding-bottom: 50px;
+       font-size: 24px;
+       line-height: 28px;
+    }
+
+    .discover-button {
+       width: 300px;
+       min-height: 60px;
+       line-height: 23px;
+    }
+
+    .welcome-slider {
+       max-width: 700px;
+       width: 100%;
+       padding-left: 224px;
+    }
+
+    .welcome-slider__numbers {
+       max-width: 71px;
+       width: 100%;
+    }
+
+    .welcome-slider__icons {
+       max-width: 160px;
+       width: 100%;
+    }
+
+    .welcome-slider__icons button {
+       width: 12px;
+       height: 12px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .welcome h2 {
+       font-size: 40px;
+       line-height: 60px;
+       text-align: center;
+    }
+
+    .welcome .container {
+       padding-top: 0;
+    }
+
+    .welcome .section-subtitle {
+       font-weight: 300;
+       font-size: 20px;
+       line-height: 23px;
+       text-align: center;
+    }
+
+    .discover-button {
+       display: none;
+    }
+
+    .welcome-slider {
+       width: 100%;
+       padding: 30px 0;
+    }
+ }
+
+ @media screen and (max-width: 420px) {}
