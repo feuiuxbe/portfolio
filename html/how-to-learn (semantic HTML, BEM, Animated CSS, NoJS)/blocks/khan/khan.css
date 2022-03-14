@@ -1,0 +1,4 @@
+.khan {
+  display: flex;
+  background: var(--gray-light);
+}

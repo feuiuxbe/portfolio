@@ -1,0 +1,15 @@
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* background-image: url("../images/header-image.png"); */
+  /* background-size: cover; */
+  width: 765px;
+  height: 608px;
+  /* AK - по макету блок идет над синим квадратом, но должен быть "ниже" заголовка и подзаголовка,
+  поэтому зет-индекс тут будет 1, а в заголовке и подзаголовке - 2 */
+  z-index: 1;
+  /* АК - добавил свойства изображению, чтобы оно сохраняло пропорции */
+  object-fit: cover;
+  object-position: center;
+}

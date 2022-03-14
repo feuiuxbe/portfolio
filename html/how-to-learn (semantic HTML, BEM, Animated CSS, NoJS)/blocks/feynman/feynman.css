@@ -1,0 +1,15 @@
+.feynman {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 890px;
+  background-color: var(--gray-light);
+  /* AK - ввожу относительное позиционирование секции, чтобы ссылка, которая по макету должна
+  позиционироваться абсолютно, делала это относительно секции, а не всей страницы */
+  position: relative;
+  background-image: url("../../images/feynman.png");
+  background-size: 867px 637px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}

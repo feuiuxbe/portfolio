@@ -1,0 +1,7 @@
+.cards__item {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  list-style: none;
+}
